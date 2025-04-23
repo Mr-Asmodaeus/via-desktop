@@ -1,8 +1,8 @@
 {
   "name": "via-desktop",
   "productName": "via-desktop",
-  "version": "1.0.0",
-  "description": "My Electron application description",
+  "version": "1.0.1",
+  "description": "Me Asmodaeus's desktop client for Via, based on Cebby's",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -47,11 +47,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cebby2420/via-desktop.git"
+    "url": "https://github.com/Mr-Asmodaeus/via-desktop#my_via-desktop"
   },
   "author": {
-    "name": "Cebby",
-    "email": "cebby2420@outlook.com"
+    "name": "Mr-Asmodaeus",
+    "email": "mr.asmodaeus@gmail.com"
   },
   "license": "GPLv3"
 }

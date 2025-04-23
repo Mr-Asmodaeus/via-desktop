@@ -54,7 +54,7 @@ const requestHandler = async (
       // Download definitions
       if (!onlyLocalDefinitions && shouldUpdate) {
         log.info("Updating definition", req.url);
-        const url = `${VIA_BASE_URL}definitions${req.url}`;
+        const url = `${VIA_BASE_URL}dist${req.url}`;
         try {
           await downloadFile(url, definitionPath);
         } catch (e) {

@@ -14,7 +14,7 @@ import { initMenu } from "./menu";
 import settings from "electron-settings";
 import { updateElectronApp } from "update-electron-app";
 
-const VIA_BASE_URL = "https://usevia.app/";
+const VIA_BASE_URL = "https://raw.githubusercontent.com/Mr-Asmodaeus/via-keyboards/refs/heads/my_via_keyboards/";
 
 let serverPort: number;
 let serverProcess: ReturnType<typeof utilityProcess.fork>;
@@ -122,10 +122,10 @@ const downloadKeyboardDefinitions = async (force = false) => {
     if (elapsedTime > 1000 * 60 * 60 * 24 || force) {
       clearFolder(defsFileDir);
       await downloadFile(
-        `${VIA_BASE_URL}definitions/supported_kbs.json`,
+        `${VIA_BASE_URL}dist/supported_kbs.json`,
         defsFilePath,
       );
-      await downloadFile(`${VIA_BASE_URL}definitions/hash.json`, hashFilePath);
+      await downloadFile(`${VIA_BASE_URL}dist/hash.json`, hashFilePath);
     } else {
       log.info("Definitions file is up to date");
     }

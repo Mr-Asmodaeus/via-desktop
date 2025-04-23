@@ -9,7 +9,7 @@ import { FuseV1Options, FuseVersion } from "@electron/fuses";
 
 const config: ForgeConfig = {
   packagerConfig: {
-    appBundleId: "dev.cebby.via-desktop",
+    appBundleId: "dev.mrasmodaeus.via-desktop",
     asar: true,
     icon: "src/icon",
   },
@@ -34,7 +34,7 @@ const config: ForgeConfig = {
       name: "@electron-forge/publisher-github",
       config: {
         repository: {
-          owner: "cebby2420",
+          owner: "mr-asmodaeus",
           name: "via-desktop",
         },
         draft: false,

@@ -52,7 +52,7 @@ export const initMenu = (
           label: "Learn More",
           click: async () => {
             await shell.openExternal(
-              "https://github.com/cebby2420/via-desktop",
+              "https://github.com/Mr-Asmodaeus/via-desktop#my_via-desktop",
             );
           },
         },
