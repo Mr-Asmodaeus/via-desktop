@@ -1,14 +1,14 @@
 {
-  "name": "via-desktop",
-  "productName": "via-desktop",
-  "version": "1.0.1",
-  "description": "Me Asmodaeus's desktop client for Via, based on Cebby's",
+  "name": "mra-via-desktop",
+  "productName": "mra-via-desktop",
+  "version": "2025.4.25",
+  "description": "Mr Asmodaeus's desktop client for Via, based on Cebby's",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "publish": "electron-forge publish",
+    "publish": "env-cmd electron-forge publish",
     "lint": "eslint --ext .ts,.tsx .",
     "prettier": "prettier . --write",
     "prettier:check": "prettier . --check"
@@ -17,11 +17,13 @@
     "electron-log": "^5.2.0",
     "electron-settings": "^4.0.4",
     "electron-squirrel-startup": "^1.0.1",
+    "env-cmd": "^10.1.0",
     "finalhandler": "^1.3.1",
     "serve-static": "^1.16.2",
     "update-electron-app": "^3.0.0"
   },
   "devDependencies": {
+    "env-cmd": "",
     "@electron-forge/cli": "^7.5.0",
     "@electron-forge/maker-deb": "^7.5.0",
     "@electron-forge/maker-dmg": "^7.5.0",
